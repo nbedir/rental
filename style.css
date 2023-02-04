@@ -1,0 +1,147 @@
+@media (max-width: 768px) {
+  .tablet, .container, #adress {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .tablet2 {
+    width: 40rem;
+  }
+}
+
+.hr {
+  border: none;
+  border-top: 5px solid #090909;
+  max-width: 550px;
+  margin: 25px auto;
+}
+
+#adress {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 40%;
+}
+#adress .top, #adress .tlf {
+  height: 50px;
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+#adress .top img, #adress .tlf img {
+  height: 30px;
+  width: 30px;
+  border-right: 2px solid rgb(145, 142, 142);
+}
+#adress .top p, #adress .tlf p {
+  font-size: 15px;
+  margin-top: 10px;
+}
+.offcanvas-body {
+  margin-right: 10rem;
+}
+
+.navbar-brand img {
+  margin-left: 10rem;
+  height: 75px;
+}
+
+.offcanvas-body ul #cl1 a {
+  position: relative;
+}
+
+.offcanvas-body ul #cl1 a::after {
+  content: "";
+  height: 3px;
+  width: 0px;
+  background: rgb(176, 50, 50);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.offcanvas-body ul #cl1 a:hover:after {
+  width: 100%;
+}
+
+.carousel-caption h4 {
+  color: red;
+  text-align: center;
+  font-size: 60px;
+  font-family: sans-serif;
+}
+
+.container {
+  gap: 2rem;
+}
+
+.col {
+  position: relative;
+  transition: all 0.8s ease-in-out;
+}
+.col-img {
+  width: 480px;
+  border: 10px solid red;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.col span {
+  background-color: rgb(33, 31, 31);
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+.col span i {
+  font-size: 35px;
+  color: rgb(169, 169, 83);
+  visibility: hidden;
+  margin: 20% 40%;
+}
+.col:hover span {
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.col:hover span i {
+  visibility: visible;
+}
+
+#hero {
+  background-color: #f2f2f2;
+}
+#hero .cards h1 {
+  font-weight: 600;
+  padding-top: 2rem;
+}
+#hero .cards1 {
+  gap: 1rem;
+  margin: 2rem 3rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  #hero .card {
+    margin: auto;
+  }
+}
+#hero .btn:hover {
+  background-color: red !important;
+  transition: all 0.2s !important;
+}
+
+.araba {
+  background-color: white !important;
+}
+.araba .card:hover {
+  transform: rotate(1deg);
+}
+
+.col-md {
+  padding-left: 5rem;
+}/*# sourceMappingURL=style.css.map */

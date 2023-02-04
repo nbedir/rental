@@ -1,0 +1,192 @@
+.tablet{
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+.tablet2{
+    @media (max-width: 768px) {
+        width:40rem;
+        
+    }
+
+}
+.hr{
+    border:none;
+    border-top: 5px solid #090909;
+    max-width: 550px;
+    margin: 25px auto;
+}
+
+
+
+
+//ADRES ALANI
+#adress{
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 40%;
+    @extend .tablet;
+
+    .top {
+        
+        height: 50px;
+        display: flex;
+        gap:0.2rem;
+        align-items: center;
+        img{
+            height: 30px;
+            width: 30px;
+            border-right: 2px solid rgb(145, 142, 142);
+        }
+        p{
+            font-size: 15px;
+            margin-top: 10px;
+            
+        }
+    }
+    .tlf  {
+        @extend .top;  
+}
+
+}
+
+
+.offcanvas-body{
+    margin-right: 10rem;
+}
+.navbar-brand img{
+    margin-left: 10rem;
+    
+    height: 75px;
+    
+}
+.offcanvas-body ul #cl1 a{
+    position: relative;
+    
+}
+.offcanvas-body  ul #cl1 a::after{
+    content:'' ;
+    height: 3px;
+    width: 0px;
+    background: rgb(176, 50, 50);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    
+}
+.offcanvas-body  ul #cl1 a:hover:after{
+    width: 100%;   
+}
+//carousel alanı
+
+.carousel-caption h4{
+    color: red;
+    text-align: center;
+    font-size: 60px;
+    font-family: sans-serif;
+    
+}
+//container alanı
+.container{
+    gap: 2rem;
+
+   @extend .tablet;
+
+    
+    
+}
+.col{
+    position: relative;
+    transition: all 0.8s ease-in-out;
+    
+    &-img{
+        width: 480px;
+        border: 10px solid red;
+        position: relative;
+        top: 0;
+        left: 0;
+        
+
+    }
+    span{
+        background-color: rgb(33, 31, 31);
+        width: 0;
+        height: 100%;
+        position:absolute;
+        top:0;
+        left: 0;
+        opacity: 0.8;
+        
+        
+        i{
+            font-size: 35px;
+            color: rgb(169, 169, 83);
+            visibility: hidden;
+            margin: 20% 40%;
+
+        }
+        
+        
+        
+        
+    }
+    &:hover span {
+        
+        height: 100%;
+         width: 100%;
+         transition:all 0.5s ease-in-out;
+         cursor: pointer;
+         i{
+            visibility: visible;
+         }
+     }
+    
+    
+}
+#hero{
+    background-color: #f2f2f2;
+    
+    .cards h1{
+        font-weight:600;
+        padding-top: 2rem;   
+    }
+    
+    .cards1{
+        gap:1rem;
+        margin: 2rem 3rem;
+        flex-wrap: wrap;
+
+    }
+    .card{
+
+        @media (max-width:768px) {
+            margin: auto;  
+        }
+    }
+    .btn:hover {
+        background-color: red !important;
+        transition:all 0.2s !important;
+    
+
+    }
+}
+.araba{
+    background-color:white !important;
+    .card:hover{
+        transform: rotate(1deg);
+
+    }
+
+    }
+.col-md{
+    padding-left: 5rem;
+}
+   
+   
+
+
+
+
